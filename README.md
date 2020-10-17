@@ -20,7 +20,7 @@ $ kubectl get nodes
 NAME                 STATUS   ROLES    AGE    VERSION
 kind-control-plane   Ready    master   3m5s   v1.16.3
 
-# create a pod, which includes bf source code in annotations
+# create a pod, which includes bf source code in its annotations
 $ kubectl create -f hello.yaml
 pod/bf-source-pod created
 $ kubectl get pods
