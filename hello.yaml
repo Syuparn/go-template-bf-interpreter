@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bf-source-pod
+# add dummies to make annotations long enough to loop (see bf-interpreter.tpl for details)
+  annotations:
+# used for bf stdin
+    input: ""
+# bf source code
+    src: >
+      +++++++++[>++++++++>+++++++++++>+++>+<<<<-]>.>++.+++++++..+++.
+      >+++++.<<+++++++++++++++.>.+++.------.--------.>+.>+.
+    dummy1: dummy1
+    dummy2: dummy2
+    dummy3: dummy3
+    dummy4: dummy4
+    dummy5: dummy5
+    dummy6: dummy6
+    dummy7: dummy7
+    dummy8: dummy8
+    dummy9: dummy9
+    dummy10: dummy10
+    dummy11: dummy11
+    dummy12: dummy12
+    dummy13: dummy13
+    dummy14: dummy14
+spec:
+  containers:
+    - name: bf-interpreter-container
+      image: alpine
