@@ -26,5 +26,5 @@ metadata:
     dummy14: dummy14
 spec:
   containers:
-    - name: bf-interpreter-container
+    - name: bf-source-container
       image: alpine

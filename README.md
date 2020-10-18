@@ -32,6 +32,16 @@ $ kubectl get pods -o go-template-file=bf-interpreter.tpl
 Hello World!
 ```
 
+When you would like to finish (or try another source code), just delete the pod.
+
+```bash
+# when you finished to play with it...
+$ kubectl delete pod bf-source-pod
+pod "bf-source-pod" deleted
+$ kubectl get pods
+No resources found in default namespace.
+```
+
 ## How it works
 
 This interpreter uses k8s output formatted by go-template. BF source code is written in
